@@ -1,38 +1,50 @@
 # Object-avoidance-robot
-ESP32  object Avoidance Robot
-Overview
-This project implements a reactive obstacle avoidance robot using an ESP32 and an ultrasonic sensor. A PID controller dynamically adjusts motor speeds to maintain a safe distance from obstacles.
+# Object Avoidance Robotic Car 🚗🤖
 
-The system is simulated using Wokwi, enabling hardware-independent testing and validation.
+## 📌 Project Overview
+The **Object Avoidance Robotic Car** is an autonomous robotic vehicle designed to detect obstacles in its path and change direction automatically.  
+It uses an **ultrasonic sensor** to measure distance and an **Arduino Uno** to process the data and control motor movement.
 
-Features
-Ultrasonic distance sensing (HC-SR04)
-PID-based control for smooth obstacle avoidance
-PWM motor control (simulated using LEDs)
-Real-time serial debugging
-Fully runnable in Wokwi
-System Architecture
-Ultrasonic Sensor → PID Controller → Motor Control (PWM)
+This project demonstrates the practical application of **embedded systems, sensors, and motor control** in robotics.
 
-Wiring Details
-Ultrasonic Sensor (HC-SR04)
-HC-SR04 Pin	ESP32 GPIO
-VCC	5V
-GND	GND
-TRIG	GPIO 5
-ECHO	GPIO 18
-Motor Outputs (Simulation)
-Motor behavior is simulated using PWM-controlled LEDs in Wokwi.
+---
 
-Function	ESP32 GPIO
-Left Motor	GPIO 26
-Right Motor	GPIO 27
-Control Logic
-Desired distance (setpoint): 25 cm
-Distance > 30 cm → Move forward
-Distance between 15–30 cm → PID-based steering
-Distance < 15 cm → Emergency stop
-Components Used
-ESP32
-HC-SR04 Ultrasonic Sensor
-PWM motor outputs (simulated)
+## ⚙️ Components Used
+- Arduino Uno  
+- Ultrasonic Sensor (HC-SR04)  
+- Motor Driver Module (L298N / L293D)  
+- DC Motors  
+- Robot Chassis  
+- Wheels  
+- Battery Pack  
+- Jumper Wires  
+
+---
+
+## 🧠 Working Principle
+1. The ultrasonic sensor continuously measures the distance to objects in front of the robot.  
+2. If the distance is greater than a defined threshold, the robot moves forward.  
+3. When an obstacle is detected within the threshold distance:
+   - The robot stops
+   - Changes direction (left/right)
+   - Continues moving to avoid collision  
+
+This logic allows the robot to navigate autonomously without human intervention.
+
+---
+
+## 🛠️ Features
+- Automatic obstacle detection  
+- Real-time distance measurement  
+- Autonomous direction control  
+- Simple and efficient logic  
+- Suitable for beginners in robotics  
+
+---
+
+## 💻 Programming Language
+- Embedded C (Arduino IDE)
+
+---
+
+## 📂 Project Structure
