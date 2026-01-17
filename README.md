@@ -1,7 +1,7 @@
 # Object-avoidance-robot
 # Object Avoidance Robotic Car 🚗🤖
 
-## 📌 Project Overview
+##  Project Overview
 The **Object Avoidance Robotic Car** is an autonomous robotic vehicle designed to detect obstacles in its path and change direction automatically.  
 It uses an **ultrasonic sensor** to measure distance and an **Arduino Uno** to process the data and control motor movement.
 
@@ -9,7 +9,7 @@ This project demonstrates the practical application of **embedded systems, senso
 
 ---
 
-## ⚙️ Components Used
+##  Components Used
 - Arduino Uno  
 - Ultrasonic Sensor (HC-SR04)  
 - Motor Driver Module (L298N / L293D)  
@@ -21,7 +21,7 @@ This project demonstrates the practical application of **embedded systems, senso
 
 ---
 
-## 🧠 Working Principle
+## Working Principle
 1. The ultrasonic sensor continuously measures the distance to objects in front of the robot.  
 2. If the distance is greater than a defined threshold, the robot moves forward.  
 3. When an obstacle is detected within the threshold distance:
@@ -33,7 +33,7 @@ This logic allows the robot to navigate autonomously without human intervention.
 
 ---
 
-## 🛠️ Features
+##  Features
 - Automatic obstacle detection  
 - Real-time distance measurement  
 - Autonomous direction control  
@@ -42,9 +42,6 @@ This logic allows the robot to navigate autonomously without human intervention.
 
 ---
 
-## 💻 Programming Language
+##  Programming Language
 - Embedded C (Arduino IDE)
 
----
-
-## 📂 Project Structure
